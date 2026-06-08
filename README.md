@@ -162,20 +162,3 @@ The API server will run locally at: **`http://127.0.0.1:8000/`**
 * **Robust Authorization:** Restricted API access using Django's permission classes.
 * **Token Rotation:** Safe session management using Short-lived Access Tokens (JWT).
 * **Decoupled Configuration:** Sensitive details (SMTP, passwords) are loaded via environment variables.
-
----
-
-## 👨‍💻 Team & Contributors
-
-* **Neha Tyagi (Team Leader)**
-  * AI, NLP, and LLM Development
-  * 🔗 [GitHub Profile](https://github.com/nehatyagi17)
-* **Aditya Rawat**
-  * Backend API & Infrastructure Development
-  * 🔗 [GitHub Profile](https://github.com/AdityaRawat05)
-* **Ayush Butola**
-  * Database Design & Integration
-  * 🔗 [GitHub Profile](https://github.com/AyushButola)
-* **Divyam Samant**
-  * Frontend Interface Design
-  * 🔗 [GitHub Profile](https://github.com/SamantD7)
