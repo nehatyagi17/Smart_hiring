@@ -51,6 +51,8 @@ Smart Hiring leverages local AI models, semantic search, and automated schedulin
 
 | Component | Technology | Detail |
 | :--- | :--- | :--- |
+| **Frontend Framework** | React, Vite | Modern component-based user interface |
+| **Icons** | `lucide-react` | Sleek and modern icons |
 | **Backend Framework** | Python 3, Django, Django REST Framework (DRF) | Core application APIs and logic |
 | **Security** | django-rest-framework-simplejwt | JWT authentication & role authorization |
 | **AI / NLP** | `sentence-transformers`, `scikit-learn`, `PyTorch` | Local semantic search & scoring (`all-MiniLM-L6-v2`) |
@@ -63,6 +65,10 @@ Smart Hiring leverages local AI models, semantic search, and automated schedulin
 
 ```text
 Smart_hiring/
+├── frontend/            # React & Vite frontend application
+│   ├── src/             # React application source code
+│   ├── package.json     # NPM dependencies & scripts
+│   └── vite.config.js   # Vite configuration
 ├── accounts/            # Authentication, roles, and user profiles
 ├── candidates/          # Resume upload, parsing, and AI scoring
 ├── chatbot/             # RAG-based chatbot logic & policy documents
@@ -126,11 +132,20 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 6️⃣ Start the Server
+### 6️⃣ Start the Django Server
 ```bash
 python manage.py runserver
 ```
 The API server will run locally at: **`http://127.0.0.1:8000/`**
+
+### 7️⃣ Start the Frontend Server
+Navigate to the frontend directory, install the required packages, and run the development server:
+```bash
+cd frontend
+npm install
+npm run dev
+```
+The frontend application will run locally (typically at **`http://localhost:5173/`**).
 
 ---
 
